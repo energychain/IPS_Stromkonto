@@ -1,0 +1,12 @@
+{
+    "id": "{E199E204-9DB3-F1D1-EBA4-F478F1DC1A75}",
+    "name": "STROMDAO",
+    "author": "Thorsten Zoerner",
+    "url": "https://github.com/energychain/",
+    "compatibility": {
+        "version": "5.4"
+    },
+    "version": "1.0",
+    "build": 0,
+    "date": 0
+}
