@@ -1,5 +1,5 @@
 # STROMKONTO
-Beschreibung des Moduls.
+Einbindung des Daten von einem Stromkonto über die [v2.0 REST API](https://corrently.io/). Die native Implementierung des Stromkontos, welche die selbe Schnittstelle nutzt ist unter [stromkonto.net](https://www.stromkonto.net/) zu finden. Das Anlegen und die Nutzung eines Stromkontos ist kostenlos.
 
 ### Inhaltsverzeichnis
 
@@ -13,7 +13,14 @@ Beschreibung des Moduls.
 
 ### 1. Funktionsumfang
 
-*
+* Abruf der Salden alle 15 Minuten
+* Bereitstellen von Soll/Haben/Saldo für Unterkonten
+* Implementiert und getestete Kontenarten:
+  * GrünstromBonus (WattStunden)
+  * Eigenstrom (WattStunden)
+  * Erzeugung (WattStunden pro Jahr)
+  * CO2 Emission (Gramm)
+  * Bäume zur CO2 Kompensierung (Stück)
 
 ### 2. Vorraussetzungen
 
@@ -22,7 +29,7 @@ Beschreibung des Moduls.
 ### 3. Software-Installation
 
 * Über den Module Store das 'STROMKONTO'-Modul installieren.
-* Alternativ über das Module Control folgende URL hinzufügen
+* Alternativ über das Module Control folgende URL hinzufügen: https://github.com/energychain/IPS_Stromkonto
 
 ### 4. Einrichten der Instanzen in IP-Symcon
 
@@ -33,35 +40,17 @@ __Konfigurationsseite__:
 
 Name     | Beschreibung
 -------- | ------------------
-         |
+account  | Kontonummer/Adresse eines Stromkonto
          |
 
 ### 5. Statusvariablen und Profile
 
 Die Statusvariablen/Kategorien werden automatisch angelegt. Das Löschen einzelner kann zu Fehlfunktionen führen.
 
-#### Statusvariablen
+### 6. PHP-Befehlsreferenz
 
-Name   | Typ     | Beschreibung
------- | ------- | ------------
-       |         |
-       |         |
-
-#### Profile
-
-Name   | Typ
------- | -------
-       |
-       |
-
-### 6. WebFront
-
-Die Funktionalität, die das Modul im WebFront bietet.
-
-### 7. PHP-Befehlsreferenz
-
-`boolean SKO_BeispielFunktion(integer $InstanzID);`
-Erklärung der Funktion.
+`SKO_update(integer $InstanzID);`
+Aktualisiert die Daten der Statusvariablen.
 
 Beispiel:
-`SKO_BeispielFunktion(12345);`
+`SKO_update(12345);`

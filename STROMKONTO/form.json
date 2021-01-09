@@ -1,31 +1,12 @@
 {
-    "elements": [],
+    "elements": [
+      {
+          "name": "account",
+          "type": "ValidationTextBox",
+          "caption": "Stromkonto (Account Number, starting with 0x..)"
+      }
+    ],
     "actions": [
-        {
-            "name": "RequestMethod",
-            "type": "ValidationTextBox",
-            "caption": "Request Method"
-        },
-        {
-            "name": "RequestURL",
-            "type": "ValidationTextBox",
-            "caption": "Request URL"
-        },
-        {
-            "name": "RequestData",
-            "type": "ValidationTextBox",
-            "caption": "Request Data"
-        },
-        {
-            "name": "Timeout",
-            "type": "NumberSpinner",
-            "caption": "Timeout"
-        },
-        {
-            "type": "Button",
-            "caption": "Send",
-            "onClick": "SKO_Send($id, $RequestMethod, $RequestURL, $RequestData, $Timeout);"
-        }
     ],
     "status": []
 }
