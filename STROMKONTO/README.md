@@ -47,6 +47,14 @@ account  | Kontonummer/Adresse eines Stromkonto
 
 Die Statusvariablen/Kategorien werden automatisch angelegt. Das Löschen einzelner kann zu Fehlfunktionen führen.
 
+Name     | Beschreibung
+-------- | ------------------
+gsb      | GrünstromBonus (In der Vergangenheit erhaltener Bonus für Verbrauch zu Zeiten mit viel regionalem Ökostrom)
+eigenstrom | Strom aus eigener Corrently Erzeugung
+erzeugung | Vorhandene Anteile an Erzeugung
+CO2 | CO2 Emission durch Netzverluste
+gsi | GrünstromIndex
+
 ### 6. PHP-Befehlsreferenz
 
 `SKO_update(integer $InstanzID);`
