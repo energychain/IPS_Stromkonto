@@ -5,7 +5,8 @@
 		 * Coding note: in general it is not allowed to create variable outside of create method.
 		 * However as subaccounts may change at any time, it is required to check which are available and create new variables ondemand
 		 */
-		public function update(Integer $objectid) {
+		public function update() {
+			$objectid =  $this->InstanceID;
 			$account = $this->ReadPropertyString("account");
 	    $skodata = json_decode(file_get_contents("https://api.corrently.io/v2.0/stromkonto/balances?account=".$account));
 
