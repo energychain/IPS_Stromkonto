@@ -1,6 +1,8 @@
 # STROMKONTO
 Einbindung des Daten von einem Stromkonto über die [v2.0 REST API](https://corrently.io/). Die native Implementierung des Stromkontos, welche die selbe Schnittstelle nutzt ist unter [stromkonto.net](https://www.stromkonto.net/) zu finden. Das Anlegen und die Nutzung eines Stromkontos ist kostenlos.
 
+
+
 ### Inhaltsverzeichnis
 
 1. [Funktionsumfang](#1-funktionsumfang)
@@ -25,11 +27,14 @@ Einbindung des Daten von einem Stromkonto über die [v2.0 REST API](https://corr
 ### 2. Vorraussetzungen
 
 - IP-Symcon ab Version 5.4
+- Stromkonto Nummer  (Kostenlos abrufen unter www.stromkonto.net)
 
 ### 3. Software-Installation
 
 * Über den Module Store das 'STROMKONTO'-Modul installieren.
 * Alternativ über das Module Control folgende URL hinzufügen: https://github.com/energychain/IPS_Stromkonto
+
+[![Verknüpfung](./linking.png)](https://stromkonto.net/)
 
 ### 4. Einrichten der Instanzen in IP-Symcon
 
@@ -50,6 +55,7 @@ Die Statusvariablen/Kategorien werden automatisch angelegt. Das Löschen einzeln
 Name     | Beschreibung
 -------- | ------------------
 gsb      | GrünstromBonus (In der Vergangenheit erhaltener Bonus für Verbrauch zu Zeiten mit viel regionalem Ökostrom)
+gsz | GrünstromZähler (SmartMeter) des Netzanschlusses
 eigenstrom | Strom aus eigener Corrently Erzeugung
 erzeugung | Vorhandene Anteile an Erzeugung
 CO2 | CO2 Emission durch Netzverluste
