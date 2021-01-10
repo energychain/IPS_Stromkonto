@@ -46,7 +46,6 @@ __Konfigurationsseite__:
 Name     | Beschreibung
 -------- | ------------------
 account  | Kontonummer/Adresse eines Stromkonto
-         |
 
 ### 5. Statusvariablen und Profile
 
