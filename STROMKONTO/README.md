@@ -27,12 +27,12 @@ Einbindung des Daten von einem Stromkonto über die [v2.0 REST API](https://corr
 ### 2. Vorraussetzungen
 
 - IP-Symcon ab Version 5.4
-- Stromkonto Nummer  (Kostenlos abrufen unter www.stromkonto.net)
 
 ### 3. Software-Installation
 
 * Über den Module Store das 'STROMKONTO'-Modul installieren.
 * Alternativ über das Module Control folgende URL hinzufügen: https://github.com/energychain/IPS_Stromkonto
+* Stromkonto verknüpfen/anlegen (wenn noch nicht vorhanden) unter https://stromkonto.net/
 
 [![Verknüpfung](./linking.png)](https://stromkonto.net/)
 
