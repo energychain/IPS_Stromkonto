@@ -1,7 +1,7 @@
 {
     "translations": {
         "de": {
-            "account": "Stromkonto"
+            "Stromkonto (Account Number, starting with 0x..)": "Stromkonto (Account Nummer, beginnend mit 0x...)"
         }
     }
 }
