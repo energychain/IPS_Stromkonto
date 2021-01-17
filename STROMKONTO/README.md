@@ -12,6 +12,7 @@ Einbindung des Daten von einem Stromkonto über die [v2.0 REST API](https://corr
 5. [Statusvariablen und Profile](#5-statusvariablen-und-profile)
 6. [WebFront](#6-webfront)
 7. [PHP-Befehlsreferenz](#7-php-befehlsreferenz)
+8. [FAQ](#8-faq)
 
 ### 1. Funktionsumfang
 
@@ -67,3 +68,27 @@ Aktualisiert die Daten der Statusvariablen.
 
 Beispiel:
 `SKO_update(12345);`
+
+### 7. PHP-Befehlsreferenz
+```php
+SKO_update(InstanceId);
+```
+Aktualisiert eine Instanz per Script. Das Modul kümmert sich in der Regel um eine automatische Aktualisierung alle 15 Minuten. Soll jedoch zum Beispiel nach einer Konfigurationsänderung eine Aktualisierung vorgenommen werden, so kann dies per Script (oder Befehl) erfolgen.
+
+### 8. FAQ
+
+#### Nach der Installation ist eine Acount Nummer beginnend mit (0x7...) vorausgefüllt. Ist das gewollt?
+
+Ja, es handelt sich hierbei um einen Demo Account (Demo Stromkonto), welches auch auf www.stromkonto.net eingetragen ist. Selbstverständlich muss und sollte man mit diesem Konto nicht produktiv arbeiten, da es sich um die Anlage des Entwicklers handelt und daher von den eigenen Werten komplet abweichen wird.
+
+#### Welche Hardware wird benötigt?
+
+Für die Verwendung des Stromkonto wird keine weitere Hardware benötigt. Es reicht ein lauffähiges IP Symcon .
+
+#### Kostet das Modul Geld, gehe ich durch die Nutzung eine Verpflichtung ein?
+
+Nein, das Stromkonto und das Modul kosten kein Geld. Es wird auch keine Verpflichtung eingegangen.
+
+#### Wenn ich mit meinem Verbrauch einen GrünstromBonus erhalte, wie kann ich diesen nutzen/einreichen?
+
+Der GrünstromBonus wird im Stromkonto verbrieft. Er kann entweder direkt auf Anfrage beim Stromanbieter eingelöst werden oder über das Webinterface an einen anderen Anschluß transferiert werden. Eine Einlösung im Symcon Modul oder über die API ist zur Zeit noch nicht direkt möglich.
